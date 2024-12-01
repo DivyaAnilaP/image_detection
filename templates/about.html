@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block title %}About - Image Detection{% endblock %}
+
+{% block content %}
+<h1>About Deepfakes</h1>
+<p>Deepfakes are AI-generated images or videos that mimic real ones, often used maliciously to spread misinformation. Our tool helps detect these fakes to promote digital safety.</p>
+<img src="{{ url_for('static', filename='images/deepfake_example.jpg') }}" alt="About Image" class="about-image">
+{% endblock %}
+

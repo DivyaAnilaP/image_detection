@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Image Detection{% endblock %}
+
+{% block content %}
+<h1>Welcome to Image Detection</h1>
+<p>Discover whether your images are fake or real with the click of a button!</p>
+<img src="{{ url_for('static', filename='images/home1.jpg') }}" alt="Home Image" class="home-image">
+{% endblock %}
+
+

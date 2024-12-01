@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Testing - Image Detection{% endblock %}
+
+{% block content %}
+<h1>Test Your Image</h1>
+<form method="post" enctype="multipart/form-data" class="upload-form">
+    <input type="file" name="file" id="file-upload" required>
+    <label for="file-upload">Choose File</label>
+    <button type="submit">Upload</button>
+</form>
+<div class="result-section">
+    <h2>Prediction Result: {{ prediction_text }}</h2>
+    {% if uploaded_image_url %}
+        <img src="{{ uploaded_image_url }}" alt="Uploaded Image" class="uploaded-image">
+    {% endif %}
+</div>
+{% endblock %}
